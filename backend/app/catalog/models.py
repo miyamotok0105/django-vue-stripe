@@ -4,7 +4,7 @@ from django.db import models
 #     name = models.CharField(max_length=32)
 #     mail = models.EmailField()
 
-class Item(models.Model):
+class ItemModel(models.Model):
     item_id = models.IntegerField()
     title = models.CharField(max_length=32)
     author = models.CharField(max_length=32)
