@@ -13,7 +13,7 @@ class ItemRepository(object):
     def all(self):
         items = []
         itemModel = ItemModel.objects.all()
-        print(itemModel.values())
+        # print(itemModel.values())
         for item in itemModel.values():
             item = Item(
                     item['item_id'],
@@ -22,7 +22,7 @@ class ItemRepository(object):
                     item['read'],
                     item['price']
                 )
-            items.append(item)
+            items.append(item.to_dict())
         # print(ItemModel.objects.values_list())
         return items
 

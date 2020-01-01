@@ -7,17 +7,10 @@ from .views import ItemViewSet2
 from . import views
 
 router = routers.DefaultRouter()
+# router = routers.SimpleRouter()
+
 router.register(r'items', ItemViewSet)
 router.register(r'items2', ItemViewSet)
-# router.register(r'items2/', ItemViewSet2, base_name="ItemViewSet2")
-
-app_name = "catalog"
-urlpatterns = [
-    path('',include(router.urls)),
-    path(r'items3/', views.ItemViewSet2.as_view()),
-]
-# ここで困ってる
-
 
 # urlpatterns = [
 #     path('',include(router.urls)),

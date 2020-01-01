@@ -5,6 +5,6 @@ class ItemService(object):
         self.item_repository = ItemRepository()
 
     def all(self):
-        item = self.item_repository
+        item = self.item_repository.all()
         # return item.all()
         return item
