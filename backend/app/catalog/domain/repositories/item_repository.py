@@ -28,3 +28,11 @@ class ItemRepository(object):
 
     def save(self, item):
         pass
+
+    def charge(self):
+        charge = {}
+        response_object = {
+            'status': 'success',
+            'charge': charge
+        }
+        return response_object

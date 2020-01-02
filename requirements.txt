@@ -3,4 +3,4 @@ djangorestframework==3.9.3
 django-memcache-status==2.1
 django-filters==0.2.1
 django-filter==2.2.0
-object_mapper
+django-cors-headers

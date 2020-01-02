@@ -4,7 +4,10 @@ class ItemService(object):
     def __init__(self):
         self.item_repository = ItemRepository()
 
-    def all(self):
+    def get_all(self):
         item = self.item_repository.all()
-        # return item.all()
         return item
+
+    def charge(self):
+        charge = self.item_repository.charge()
+        return charge
