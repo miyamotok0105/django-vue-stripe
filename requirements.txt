@@ -1,4 +1,4 @@
-Django==2.2.6
+Django==2.2.8
 djangorestframework==3.9.3
 django-memcache-status==2.1
 django-filters==0.2.1
