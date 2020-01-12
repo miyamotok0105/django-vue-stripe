@@ -69,8 +69,10 @@ python manage.py createsuperuser
 python manage.py runserver
 
 npm install -g vue-cli
-vue init webpack frontend
-npm run dev
+vue create .
+npm run serve
+
+npm run build
 ```
 
 Check RFC 7519 about jwt.
