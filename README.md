@@ -78,6 +78,29 @@ npm run build
 Check RFC 7519 about jwt.
 
 
+
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+
+API Refarence
+
+
+```
+get file
+http://127.0.0.1:8000/file/upload/
+
+post file
+http://127.0.0.1:8000/file/upload/
+form-data
+file:dog.pgn
+remark:dog1
+```
+
+
+
 # Reference
 
 [Stripe Elements for the web](https://stripe.com/docs/stripe-js)
